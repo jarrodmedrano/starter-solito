@@ -1,8 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Dispatch, SetStateAction } from 'react';
 
-export default function useDarkSide() {
-  const [theme, setTheme] = useState(localStorage.theme);
-  const colorTheme = theme === 'dark' ? 'light' : 'dark';
+export const useDarkSide = (): [string, Dispatch<SetStateAction<string>>] => {
+  const [theme, setTheme] = useState<string>(
+    typeof window !== 'undefined' ? localStorage?.theme : 'dark'
+  );
+  const colorTheme: string = theme === 'dark' ? 'light' : 'dark';
 
   console.log('theme', theme);
 
@@ -14,4 +16,4 @@ export default function useDarkSide() {
   }, [theme, colorTheme]);
 
   return [colorTheme, setTheme];
-}
+};
