@@ -1,25 +1,16 @@
-import { useEffect, useState } from 'react';
+import { ChangeEventHandler, useEffect, useState } from 'react';
 import { useDarkSide } from '../utilities/useDarkSide';
 
 export default function Switcher() {
-  const [colorTheme, setTheme] = useDarkSide();
-  const [darkSide, setDarkSide] = useState(
-    colorTheme === 'light' ? true : false
-  );
+  const [theme, setTheme] = useDarkSide();
 
-  const toggleDarkMode = (checked) => {
-    setDarkSide(checked);
-    setTheme(colorTheme);
+  const toggleDarkMode: ChangeEventHandler<HTMLInputElement> = (checked) => {
+    setTheme(checked ? 'dark' : 'light');
   };
 
   return (
     <>
-      <input
-        type="checkbox"
-        checked={darkSide}
-        onChange={toggleDarkMode}
-        size={30}
-      />
+      <input type="checkbox" checked={theme === 'dark'} onChange={toggleDarkMode} size={30} />
     </>
   );
 }

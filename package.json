@@ -16,6 +16,7 @@
   },
   "scripts": {
     "native": "cd apps/expo && expo start",
-    "web": "cd apps/next && yarn next"
+    "web": "cd apps/next && yarn next",
+    "preview": "vite preview"
   }
 }
