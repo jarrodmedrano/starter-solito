@@ -9,16 +9,15 @@ import Switcher from 'app/components/Switcher';
 
 export function HomeScreen() {
   return (
-    <View className="flex-1 items-center justify-center p-3">
+    <View className="flex-1 items-center justify-center bg-white p-3 dark:bg-black dark:text-white">
       <Switcher />
-      <H1>Welcome to Solito.</H1>
+      <H1 className="dark:text-white">Welcome to Solito.</H1>
       <View className="max-w-xl">
-        <P className="text-center">
-          Here is a basic starter to show you how you can navigate from one
-          screen to another. This screen uses the same code on Next.js and React
-          Native.
+        <P className="text-center dark:text-slate-400">
+          Here is a basic starter to show you how you can navigate from one screen to another. This screen uses the same
+          code on Next.js and React Native.
         </P>
-        <P className="text-center">
+        <P className="text-center dark:text-slate-400">
           Solito is made by{' '}
           <A
             href="https://twitter.com/fernandotherojo"
@@ -31,7 +30,7 @@ export function HomeScreen() {
           </A>
           .
         </P>
-        <P className="text-center">
+        <P className="text-center dark:text-slate-400">
           NativeWind is made by{' '}
           <A
             href="https://twitter.com/mark__lawlor"
@@ -63,7 +62,7 @@ export function HomeScreen() {
             duration: 150,
           }}
         >
-          <Text selectable={false} className="text-base font-bold">
+          <Text selectable={false} className="text-base font-bold dark:text-slate-400">
             Moti Link
           </Text>
         </MotiLink>

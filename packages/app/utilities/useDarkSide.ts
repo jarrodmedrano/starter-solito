@@ -7,6 +7,7 @@ export const useDarkSide = (): [string, Dispatch<SetStateAction<string>>] => {
 
   useEffect(() => {
     const root = window.document.documentElement;
+    root.classList.remove('light', 'dark');
     if (theme) {
       root.classList.add(theme);
       localStorage.setItem('theme', theme);
