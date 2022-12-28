@@ -1,5 +1,5 @@
-import { assert, beforeAll, describe, expect, it, vi } from 'vitest';
-import { renderHook, cleanup, fireEvent, screen, waitFor } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
+import { renderHook } from '@testing-library/react';
 import { useDarkSide } from './useDarkSide';
 
 describe('useDarkSide', () => {

@@ -37,8 +37,8 @@
       "yarn run prettier:fix"
     ],
     "*.{js,jsx,ts,tsx}": [
-      "yarn run test",
-      "yarn run coverage"
+      "yarn run test --env=jsdom",
+      "yarn run coverage --env=jsdom"
     ]
   },
   "scripts": {
