@@ -1,11 +1,9 @@
-import { A, H1, P, Text, TextLink } from 'app/design/typography';
-import { Row } from 'app/design/layout';
-import { View } from 'app/design/view';
-
-import { useDarkSide } from 'app/utilities';
+import { A, H1, P, Text, TextLink } from '../../design/typography';
+import { Row } from '../../design/layout';
+import { View } from '../../design/view';
 
 import { MotiLink } from 'solito/moti';
-import Switcher from 'app/components/Switcher';
+import Switcher from '../../components/Switcher';
 
 export function HomeScreen() {
   return (

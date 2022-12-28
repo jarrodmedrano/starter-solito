@@ -11,7 +11,7 @@
     "@types/react-native": "^0.69.5",
     "@vitejs/plugin-react": "^3.0.0",
     "eslint": "^8.21.0",
-    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.0",
     "eslint-config-next": "11.1.2",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
@@ -57,6 +57,8 @@
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0"
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "expo-linking": "^3.3.0"
   }
 }

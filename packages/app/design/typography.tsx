@@ -42,6 +42,7 @@ export const A = forwardRef<NativeText, StyledProps<AProps>>(function A(
     },
     default: {
       onPress: (event) => {
+        //eslint-disable-next-line @typescript-eslint/no-unused-expressions
         props.onPress && props.onPress(event);
         if (Platform.OS !== 'web' && href !== undefined) {
           Linking.openURL(href);
